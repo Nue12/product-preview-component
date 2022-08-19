@@ -1,0 +1,128 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card-container {
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.product-image-desktop {
+    width: 50%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.product-image-mobile {
+    display: none;
+}
+
+.description-container{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin: 20px 40px;
+}
+
+.cateAndDescript {
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.nameAndDisPrice {
+    font-family: 'Fraunces', serif;
+}
+
+.product-category {
+    letter-spacing: 5px;
+}
+
+.product-name {
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 700px;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(212, 21%, 14%)
+}
+
+.description {
+    line-height: 20px;
+}
+
+.discount-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.normal-price {
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.cartIcon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.addCartButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.addCartButton:hover {
+    background-color: hsl(158, 48%, 20%);
+}
+
+@media only screen and (max-width: 425px) {
+    .card-container {
+        width: 90%;
+        height: auto;
+        background-color: #FFF;
+        margin:auto;
+    }
+
+    .product-image-desktop {
+        display: none;
+    }
+
+    .product-image-mobile {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .description-container {
+        position: static;
+    }
+}
